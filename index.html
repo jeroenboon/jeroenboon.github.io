@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verambtelijkt – Welkom bij Wigo4it Kees!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welkom Kees</h1>
+            <h2>Pak een kop koffie en ga zitten</h2>
+        </header>
+
+        <main>
+            <!-- Countdown Clock Section -->
+            <section class="countdown-section">
+                <div class="countdown-container">
+                    <h3>Nog maar even:</h3>
+                    <div class="countdown-clock">
+                        <div class="time-unit">
+                            <span id="years" class="time-value">00</span>
+                            <span class="time-label">Jaren</span>
+                        </div>
+                        <div class="time-unit">
+                            <span id="months" class="time-value">00</span>
+                            <span class="time-label">Maanden</span>
+                        </div>
+                        <div class="time-unit">
+                            <span id="days" class="time-value">00</span>
+                            <span class="time-label">Dagen</span>
+                        </div>
+                        <div class="time-unit">
+                            <span id="hours" class="time-value">00</span>
+                            <span class="time-label">Uren</span>
+                        </div>
+                        <div class="time-unit">
+                            <span id="minutes" class="time-value">00</span>
+                            <span class="time-label">Minuten</span>
+                        </div>
+                        <div class="time-unit">
+                            <span id="seconds" class="time-value">00</span>
+                            <span class="time-label">Seconden</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Wisdom Tiles Section -->
+            <section class="wisdom-section">
+                <h3>Ambtenarenwijsheid</h3>
+                <div class="tiles-container">
+                    <div class="tile" id="tile1">
+                        <div class="tile-content">
+                            <p id="wisdom1">Waarom vandaag doen wat je ook morgen kunt delegeren.</p>
+                        </div>
+                    </div>
+                    <div class="tile" id="tile2">
+                        <div class="tile-content">
+                            <p id="wisdom2">Geen besluit is ook een besluit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ambtenaar van de Maand Section -->
+            <section class="ambtenaar-section">
+                <h3>Ambtenaar van de Maand</h3>
+                <div class="ambtenaar-container">
+                    <div class="ambtenaar-card">
+                        <div class="ambtenaar-foto">
+                            <img id="ambtenaarFoto" src="" alt="Ambtenaar van de maand">
+                        </div>
+                        <div class="ambtenaar-info">
+                            <h4 id="ambtenaarNaam"></h4>
+                            <p class="ambtenaar-titel" id="ambtenaarTitel"></p>
+                            <p class="ambtenaar-beschrijving" id="ambtenaarBeschrijving"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Games Section -->
+            <section class="games-section">
+                <h3>Things to do while you wait (tot je pensioen)</h3>
+                <div class="games-container">
+                    <button class="game-button" onclick="openGame('minesweeper')">
+                        <span class="game-icon">💣</span>
+                        <span class="game-title">Mijnenveger</span>
+                    </button>
+                    <button class="game-button" onclick="openGame('patience')">
+                        <span class="game-icon">🃏</span>
+                        <span class="game-title">Patience</span>
+                    </button>
+                    <button class="game-button" onclick="openGame('freecell')">
+                        <span class="game-icon">🃏</span>
+                        <span class="game-title">Freecell</span>
+                    </button>
+                    <button class="game-button" onclick="openGame('tetris')">
+                        <span class="game-icon">🧩</span>
+                        <span class="game-title">Tetris</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Deze website is niet in overeenstemming met WCAG 2.1, BIO, of andere beleidskaders. Maar dat komt vanzelf.</p>
+        </footer>
+    </div>
+
+    <!-- Game Modals -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Spel</h2>
+            <div id="gameFrame"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
