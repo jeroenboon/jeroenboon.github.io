@@ -93,7 +93,7 @@ class PensionCountdown {
     constructor() {
         // Set retirement date (example: 65th birthday)
         // You can modify this date as needed
-        this.retirementDate = new Date('2030-12-31T17:00:00'); // Example: December 31, 2030 at 5 PM
+        this.retirementDate = new Date('2051-10-25T08:00:00'); // Example: December 31, 2030 at 5 PM
         this.timeElements = {
             years: document.getElementById('years'),
             months: document.getElementById('months'),
